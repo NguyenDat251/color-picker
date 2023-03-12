@@ -1,0 +1,55 @@
+.mainCanvas {
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  filter: blur(0px) !important;
+}
+
+.tooltip-color-detect {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100px;
+  border-radius: 5px;
+  box-shadow: 0 10px 30px rgb(65 72 86 / 5%);
+  border: solid 3px #5e0c1d;
+  padding: 10px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+
+.colorPreview-color-detect {
+  width: 80px;
+  height: 20px;
+  min-height: 20px;
+}
+
+.colorPreview-white-border {
+  border: 1px solid #5e0c1d;
+}
+
+.colorHexCode-color-detect {
+  margin-top: 5px;
+  color: #5e0c1d;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+}
+
+.tooltip-color-detect::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  right: calc(100% - 30px);
+  border-width: 10px;
+  border-style: solid;
+  border-color: #5e0c1d transparent transparent transparent;
+}
+
+.tooltip-color-detect-flip::after {
+  top: -20px;
+  border-color: transparent transparent #5e0c1d transparent;
+}
